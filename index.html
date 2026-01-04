@@ -1,0 +1,189 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(243, 237, 243);
+        }
+        .a{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(71, 68, 68);
+            font-size:18px;
+            margin-top:15px;
+        }
+        .cont{
+            display: flex;
+            gap:40px;
+            text-align: center;
+            justify-content: center;
+                }
+        .modes{
+            width:100px;
+            border-radius:10px;
+            background-color: rgb(53, 52, 52);
+            border:2px solid rgb(255, 255, 255);
+            color:white;
+            height:50px
+        }
+        .btns{
+            transition-duration: 0.3s;
+            padding:10px;
+           border:2px solid rgb(49, 49, 173);
+            background-color: rgb(241, 238, 238);
+            color:rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        .more_cont{
+            display: flex;
+            gap:5px;
+            align-items: center;
+            justify-content: center;
+        } 
+        .data{
+            display: flex;
+            margin-top:30px;
+            gap:20px;
+        }
+        @keyframes imgslide{
+            0%{
+                background-image:url('https://media.gettyimages.com/id/1635978232/photo/a-beautiful-green-landscape-from-coorg-india.jpg?s=612x612&w=0&k=20&c=jUNV9veZDmBkbmvcNWGEXB2Bw4bTozHxQYoCwrd1y4c=')
+            }
+            10%{
+                background-image: url('https://media.gettyimages.com/id/1199419830/photo/a-scenic-view-of-the-ulsoor-lake.jpg?s=612x612&w=0&k=20&c=6PqMpWMN2Bpx3BTbLjRwRxss4WYZYk9bh7AVia4K9Ow=');
+            }
+            20%{
+                background-image: url('https://media.gettyimages.com/id/137336783/photo/vittala-temple-stone-chariot-hampi-karnataka-india.jpg?s=612x612&w=0&k=20&c=mQq4me5Nr_8uWnr4eQcJCSy5tcZ46H-QzIxrYsn6f2E=')
+            }
+            30%{
+                background-image:url('https://media.gettyimages.com/id/914914190/photo/hampi-india-stone-chariot-in-the-vittala-temple-in-hampi-hampi-is-a-village-and-a-group-of.jpg?s=612x612&w=0&k=20&c=30XOXVuUYKa3Zo2G_MJgMRzGZ5pwUjbH1w--qrNMb4U=')
+            }
+            40%{
+                background-image: url('https://media.gettyimages.com/id/943723082/photo/the-cubbon-park-of-bangalore.jpg?s=612x612&w=0&k=20&c=XEPZclJOf6RyGWtbonTTnLKOJPY-g962_tkHB3qDULo=');
+            }
+            50%{
+                background-image: url('https://media.gettyimages.com/id/1240745752/photo/vehicles-make-their-way-against-the-backdrop-of-rain-clouds-on-the-outskirts-of-bangalore-on.jpg?s=612x612&w=0&k=20&c=0g2H4mUtyRJwUTH7TbgHod2cBl43eyc2KjnWcw7U75Q=');
+            }
+            60%{
+                background-image: url('https://media.gettyimages.com/id/141102663/photo/kadumane-tea-estate-at-sakleshpur.jpg?s=612x612&w=0&k=20&c=c1GPt8BZijQHhUxIak0lqtYDQjWbfp_4Su2gCCuSrpc=');
+            }
+            80%{
+                background-image: url('https://media.gettyimages.com/id/1358550110/photo/sunrise-over-melkote-temple.jpg?s=612x612&w=0&k=20&c=oW-zCsUTRdwGt_wdNDjAb75cDQyFwd5g5Xlftp7l67o=');
+            }
+            100%{
+                background-image:url('https://media.gettyimages.com/id/1036190414/photo/aerial-cloud-sea-and-wind-power.jpg?s=612x612&w=0&k=20&c=z5DKkA5DSCBczOmoIZdjgHfwk2_i0WTB25SNFLXXRY4=');
+            }
+        }
+        @keyframes imgslides{
+            0%{
+                background-image:url('https://media.gettyimages.com/id/1297500238/photo/spituk-gompa-indus-valley-near-leh-ladakh-india.jpg?s=612x612&w=0&k=20&c=IhawDKQhl-WIrYxJprcUGLg3YS84s7VMMOFzt443vzs=')
+            }
+            10%{
+                background-image: url('https://media.gettyimages.com/id/1200898499/photo/prayer-flag-in-tsemo-castle-with-beautiful-mountain-snow-landscape-background-in-leh-ladakh.jpg?s=612x612&w=0&k=20&c=qCBsCNzkez7V_GNBC7z1korSmN4jzKTf_q0Qs2S1yZg=');
+            }
+            20%{
+                background-image: url('https://media.gettyimages.com/id/541306667/photo/stunning-pangong-lake.jpg?s=612x612&w=0&k=20&c=juCs-vFzFcjE4aAHfBPT3TiyphiXUgQ7xEknKA_2PE4=')
+            }
+            30%{
+                background-image:url('https://media.gettyimages.com/id/982302532/photo/wild-yaks-in-ladakh-india.jpg?s=612x612&w=0&k=20&c=JGPRYGZiKIB_znagV6ypeIfUOyYFl7QK2sfOGxnaGWo=')
+            }
+            40%{
+                background-image: url('https://media.gettyimages.com/id/2109847504/photo/dorf.jpg?s=612x612&w=0&k=20&c=dS7L-DnXxyK9KVtc4tJ7Bly0mOSZPsylgMNr6eaN2vA=');
+            }
+            50%{
+                background-image: url('https://media.gettyimages.com/id/924915202/photo/beautiful-landscape-view-of-lamayuru-temple-in-leh-ladakh-on-the-hill-in-mountain-valley.jpg?s=612x612&w=0&k=20&c=Y-HjszwlcfEH3OM84EuR7aAYAqM1Im4Cj02TwRAHWBQ=');
+            }
+            60%{
+                background-image: url('https://media.gettyimages.com/id/1741640031/photo/vehicles-move-through-zoji-la-a-dangerous-mountain-pass-in-the-himalayas-that-connects.jpg?s=612x612&w=0&k=20&c=0FchW0ftbRptE2hkiZycmDkaLJXsVSBxfG16L5H186Y=');
+            }
+            80%{
+                background-image: url('https://media.gettyimages.com/id/1054227764/photo/a-car-speeding-on-a-mountain-road-surrounded-by-himalayan-mountain-range.jpg?s=612x612&w=0&k=20&c=AJx1pKvMxVqafftE5A1yWm78bJJCMgGJBAFCdvzsH5c=');
+            }
+            100%{
+                background-image:url('https://media.gettyimages.com/id/591714797/photo/road-in-padum-zanskar.jpg?s=612x612&w=0&k=20&c=D_cZ2c4wUt0k0h5DmiXnE8AVCi7Ycc8lcaBOP9mKLq0=');
+            }
+        }
+        .img_holder{
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation:imgslide 120s ease infinite;
+            display: block;
+            width:5000px;
+            height:350px;
+            background-color: rgb(255, 255, 255);
+            border-radius:50px;
+        }
+        .img_holderz{
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation:imgslides 120s ease infinite;
+            display: block;
+            width:5000px;
+            height:350px;
+            background-color: rgb(255, 255, 255);
+            border-radius:50px;
+        }
+    </style>
+    <body id="body">
+        <audio autoplay id="aud" src="c:\Users\sajan\my python\OneDrive\Desktop\math\website music.mp3"></audio>
+        <audio autoplay src="https://www.youtube.com/watch?v=aBkTkxKDduc&list=RDaBkTkxKDduc&start_radio=1"></audio>
+        <div class="cont">
+        <h4 class="a"> Art math prject based on karnataka and ladakh</h4>
+        <button class="modes" id="mode">Dark mode</button>
+        </div>
+        <hr>
+        <div class="more_cont" id="b">
+            <a href="https://ronycoder123.github.io/lit/">
+        <button class="btns" id="as2">Literacy and language</button>
+        </a>
+        <a href="https://ronycoder123.github.io/rel/">
+        <button class="btns" id="as3">Religion Distribution</button>
+        </a>
+        <a href="https://ronycoder123.github.io/bib/">
+        <button class="btns" id="as4">Bibliography[Digital]</button>
+        </a>
+        <a href="https://ronycoder123.github.io/rain/">
+        <button class="btns" id="as5">Rainfall Statistics</button>
+        </a>
+        <a href="https://ronycoder123.github.io/pop/">
+        <button class="btns" id="as">Population</button>
+        </a>
+        </div>
+        <hr>
+        <div class="data">
+            <div class="img_holder"></div>
+            <h2 class='a' id="s">Karnataka, located in the southern part of India, is known for its diverse landscapes, rich culture, and strong economic growth. The state spans an area of about 191,791 square kilometers, with Bengaluru as its bustling capital and major tech hub, earning it the nickname “Silicon Valley of India.” Karnataka’s terrain includes the lush Western Ghats, scenic hill stations like Coorg and Chikmagalur, fertile river plains, and a long coastline along the Arabian Sea. Agriculture, IT, tourism, and biotechnology are key contributors to its economy. The state has a population of around 6.8 crore, with Kannada as the official language, and a literacy rate of approximately 75–77%. Predominantly Hindu, Karnataka is also home to Islam, Christianity, Jainism, and Buddhism communities. Its rich cultural heritage is reflected in festivals like Dasara in Mysore, traditional arts such as Yakshagana dance-drama, and classical Carnatic music. With a balance of natural beauty, cultural depth, and modern development, Karnataka represents both tradition and progress in India.</h2>
+            </div>
+        </div>
+        <div class="data">
+            <h2 class='a' id="s1">Ladakh, often called the “Land of High Passes,” is a unique region in northern India, renowned for its stark landscapes, towering mountains, and Buddhist culture. Situated in the Indian Himalayas, it includes the valleys of Leh and Kargil and is bordered by the Karakoram and Zanskar ranges. With a population of just over 3 lakh, Ladakh has a low population density and a harsh cold desert climate, with long winters and short summers. The region’s economy relies on tourism, agriculture, and animal husbandry, with high-altitude farming and yak-rearing being common. Predominantly Buddhist, Ladakh also has Muslim communities, especially in Kargil. Its cultural richness is reflected in monasteries like Hemis and Thiksey, traditional festivals, and unique handicrafts. Ladakh’s breathtaking landscapes, from Pangong Lake to Nubra Valley, combined with its serene lifestyle, make it a region of both natural and spiritual significance in India.</h2>
+            <div class="img_holderz"></div>
+            
+            </div>
+        </div>
+        <script>
+            let x = 0;
+document.getElementById('mode').onclick = function() {
+    x += 1;
+    if (x%2 !=0){
+    document.getElementById('body').style.backgroundColor='rgb(15,15,15)';
+    document.getElementById('as').style.backgroundColor=document.getElementById('as2').style.backgroundColor=document.getElementById('as3').style.backgroundColor=document.getElementById('as4').style.backgroundColor=document.getElementById('as5').style.backgroundColor='rgb(15,15,15)'
+document.getElementById('as').style.color=document.getElementById('as2').style.color=document.getElementById('as3').style.color=document.getElementById('as4').style.color=document.getElementById('as5').style.color='white'
+document.getElementById('s').style.color=document.getElementById('s1').style.color='white'
+document.getElementById('mode').style.backgroundColor='white';
+document.getElementById('mode').style.color='black'
+document.getElementById('mode').style.border='2px solid black'
+document.getElementById('mode').textContent='Light Mode'
+}
+if (x%2==0){
+    document.getElementById('body').style.backgroundColor='white';
+    document.getElementById('as').style.backgroundColor=document.getElementById('as2').style.backgroundColor=document.getElementById('as3').style.backgroundColor=document.getElementById('as4').style.backgroundColor=document.getElementById('as5').style.backgroundColor='white'
+document.getElementById('as').style.color=document.getElementById('as2').style.color=document.getElementById('as3').style.color=document.getElementById('as4').style.color=document.getElementById('as5').style.color='black'
+document.getElementById('s').style.color=document.getElementById('s1').style.color='rgb(54,54,54)'
+document.getElementById('mode').style.backgroundColor='rgb(54,54,54)';
+document.getElementById('mode').style.border='2px solid white'
+document.getElementById('mode').textContent='Dark Mode'
+document.getElementById('mode').style.color='white'
+}
+}
+document.getElementById('aud').volume=0.1;
+</script>
+</body>
+</html>
